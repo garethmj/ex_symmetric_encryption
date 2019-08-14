@@ -12,7 +12,7 @@ Get your private key from Ruby land:
   irb> load './lib/symmetric_encryption.rb'
   irb> SymmetricEncryption.load!("/path/to/your/symmetric-encryption.yml", "production")
   irb> SymmetricEncryption.cipher.send(:key).each_byte.to_a.join(', ')
-  "=someGarbledM3ss"
+  "2, 5, 7, 9, ..."
 ```
 
 Grab the output of that last command and then:
